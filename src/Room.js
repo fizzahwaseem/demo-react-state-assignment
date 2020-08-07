@@ -21,7 +21,13 @@ function Room() {
       <button onClick={ ()=> {
         console.log("Increase Temperature arrow function")
         setTemp(++temp)
-      }}>Increase Temperature</button>
+      }} className="increase">Increase Temperature</button>
+      <br/>
+      <button onClick={ ()=> {
+        console.log("Decrease Temperature arrow function")
+        setTemp(--temp)
+      }} className="decrease">Decrease Temperature</button>
+    
     </div>
   );
 }
